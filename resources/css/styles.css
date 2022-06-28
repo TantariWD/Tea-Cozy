@@ -18,6 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid seashell;
+    background-color: black;
 }
 
 .logo {
@@ -28,6 +29,7 @@ header {
 ul {
     display: flex;
     margin: 0.46rem;
+    padding: 0;
 }
 
 li {
@@ -40,4 +42,26 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+/* Banner */
+
+main {
+    margin: 3.14rem 2.25rem;
+}
+
+section#mission {
+    background-image: url('/resources/images/img-mission-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 31.82rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mission article {
+    background-color: black;
+    padding-bottom: 0.25rem;
 }
