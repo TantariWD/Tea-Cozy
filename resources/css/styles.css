@@ -64,7 +64,7 @@ a:hover {
 /* Banner */
 
 section#mission {
-    background-image: url('/resources/images/img-mission-background.jpg');
+    background-image: url('../images/img-mission-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -122,7 +122,7 @@ figcaption {
 /* 2 Mobile Size */
 
 section#locations {
-    background-image: url('/resources/images/img-locations-background.jpg');
+    background-image: url('../images/img-locations-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
