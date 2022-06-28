@@ -1,8 +1,8 @@
 html {
     font-family: Helvetica;
     font-size: 22px;
-    color: seashell;
-    background-color: black;
+    color: hsl(25, 100%, 97%);
+    background-color: hsl(0, 0%, 0%);
     opacity: 0.9;
     text-align: center;
 }
@@ -34,8 +34,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid seashell;
-    background-color: black;
+    border-bottom: 1px solid hsl(25, 100%, 97%);
+    background-color: hsl(0, 0%, 0%);
 }
 
 .logo {
@@ -76,7 +76,7 @@ section#mission {
 }
 
 #mission article {
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     padding-bottom: 0.25rem;
 }
 
@@ -97,9 +97,20 @@ figure {
     margin: 0.5rem;
 }
 
-figure img {
+.thumbnail {
     width: 13.64rem;
     height: 9.1rem;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+    
+.thumbnail:hover {
+-webkit-transform: scale(1.04);
+-moz-transform: scale(1.04);
+-o-transform: scale(1.04);
+-ms-transform: scale(1.04);
+transform: scale(1.04);
 }
 
 figcaption {
@@ -107,6 +118,8 @@ figcaption {
 }
 
 /* Locations */
+/* 1 Browser Size */
+/* 2 Mobile Size */
 
 section#locations {
     background-image: url('/resources/images/img-locations-background.jpg');
@@ -119,20 +132,42 @@ section#locations {
     margin-top: 2.5rem;
 }
 
-section.locations-cta {
+/* 1 */
+
+section.browser {
     display: flex;
     justify-content: center;
 }
 
-.locations-cta article {
+.browser article {
     margin: 0 .91rem;
     width: 13.64rem;
     height: 15rem;
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+/* 2 */
+
+section.mobile {
+    display: none;
+}
+
+.button {
+    background-color: hsl(0, 0%, 0%);
+    padding: 1rem;
+    transition: background-color 0.25s ease;
+}
+
+.button:hover {
+    background-color: hsl(0, 0%, 16%)
+}
+
+.mobile a {
+    text-decoration: none;
 }
 
 /* Contact */
@@ -147,4 +182,33 @@ section.contact {
 footer {
     text-align: left;
     margin-left: 0.91rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px){
+    section.browser {
+        display: none;
+    }
+
+    section.mobile {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 20rem;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    main {
+        margin: 3.14rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        margin: 3.14rem 0;
 }
