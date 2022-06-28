@@ -134,3 +134,17 @@ section.locations-cta {
     flex-direction: column;
     justify-content: space-around;
 }
+
+/* Contact */
+
+section.contact {
+    height: 9.1rem;
+    padding-top: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+    text-align: left;
+    margin-left: 0.91rem;
+}
