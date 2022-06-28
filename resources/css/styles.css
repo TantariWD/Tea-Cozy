@@ -211,4 +211,5 @@ footer {
 @media only screen and (max-width: 768px) {
     main {
         margin: 3.14rem 0;
+    }
 }
